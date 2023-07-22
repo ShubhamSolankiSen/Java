@@ -1,20 +1,19 @@
-public class pyram {
+public class number_pyramid {
     public static void main(String[] args) {
-        int n = 4;
-
-        // outer loop
+        int n = 5;
         for (int i = 1; i <= n; i++) {
 
-            // inner loop-space print
-            for (int j = 1; j <= n - i; j++) {
+            // spaces
+            int spaces = n - i;
+            for (int j = 1; j <= spaces; j++) {
                 System.out.print(" ");
             }
-
-            // inner loop-star print
+            // numbers print row numbers
             for (int j = 1; j <= i; j++) {
-                System.out.println("*");
+                System.out.print(i+" ");
             }
             System.out.println();
         }
     }
+
 }
