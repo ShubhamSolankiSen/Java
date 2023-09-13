@@ -63,14 +63,14 @@ import java.util.*;
 // Print all the subsets of a set of first n natural numbers , n=3
 
 public class recur_Q {
-    public static void printSubset(ArrayList<Integer> subset) {
+    public static void printSubset(ArrayLists<Integer> subset) {
         for (int i = 0; i < subset.size(); i++) {
             System.out.print(subset.get(i) + " ");
         }
         System.out.println();
     }
 
-    public static void findSubsets(int n, ArrayList<Integer> subset) {
+    public static void findSubsets(int n, ArrayLists<Integer> subset) {
         if (n == 0) {
             printSubset(subset);
         }
@@ -85,7 +85,7 @@ public class recur_Q {
 
     public static void main(String[] args) {
         int n = 3;
-        ArrayList<Integer> subset = new ArrayList<>();
+        ArrayLists<Integer> subset = new ArrayLists<>();
         findSubsets(n, subset);
     }
 }
